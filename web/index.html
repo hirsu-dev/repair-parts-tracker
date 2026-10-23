@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#201b19" />
+    <meta
+      name="description"
+      content="Benchbook: track electronics repairs, parts stock, wiring notes, test outcomes and assigned parts value. Local browser storage and backups."
+    />
+    <title>Benchbook / Repairs & Parts</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to workspace</a>
+    <header>
+      <a class="brand" href="#projects">▧ BENCHBOOK</a>
+      <nav>
+        <a href="#projects">Builds</a><a href="#parts">Parts cabinet</a
+        ><a href="#log">Repair log</a>
+      </nav>
+      <a href="https://hrushikbarani-hub.github.io/">hirsu ↗</a>
+    </header>
+    <main id="main">
+      <section class="intro">
+        <p>THE WORK BETWEEN IDEA AND WORKING.</p>
+        <h1>Keep track<br />of <em>the fix.</em></h1>
+        <span>Projects, parts, wiring and the next useful test.</span>
+      </section>
+      <div class="data-bar">
+        <span id="storage">Opening local workspace…</span
+        ><button id="export">Export backup ↓</button
+        ><label class="import-label"
+          >Restore backup<input
+            id="import"
+            type="file"
+            accept="application/json,.json"
+        /></label>
+      </div>
+      <p id="message" role="status"></p>
+      <div id="view"></div>
+    </main>
+    <footer>
+      <span>LOCAL RECORDS / USD PART VALUES / NO ACCOUNT</span
+      ><a href="https://github.com/hrushikbarani-hub/repair-parts-tracker"
+        >Source & setup ↗</a
+      >
+    </footer>
+  </body>
+</html>
