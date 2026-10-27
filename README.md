@@ -35,7 +35,7 @@ python -m http.server 8147 --bind 127.0.0.1 --directory web
 
 Open `http://127.0.0.1:8147`. Node.js 22+ is used for development checks only. The app has no runtime npm dependency.
 
-Checks cover stock consumption, preserved snapshots, rejected overspending, concurrent IndexedDB transactions, rollback and the real project/part/log form workflow. Visual browser QA was unavailable for the release; inspect the responsive interface on your intended devices.
+Checks cover stock consumption, preserved snapshots, rejected overspending, concurrent IndexedDB transactions, rollback and the real project/part/log form workflow. The responsive interface still needs visual testing on intended devices.
 
 `web/model.js` contains ledger rules and validation. `web/store.js` owns transactional storage and the memory fallback. `web/app.js` renders and operates the workspace. GitHub Actions checks the code and publishes only `web` to free GitHub Pages.
 
