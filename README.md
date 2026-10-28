@@ -1,6 +1,6 @@
 # Benchbook: Repair Log and Parts Tracker
 
-Keep builds, repairs, wiring notes and parts together. [Open the browser app](https://hrushikbarani-hub.github.io/repair-parts-tracker/).
+Keep builds, repairs, wiring notes and parts together. [Open the browser app](https://hirsu-dev.github.io/repair-parts-tracker/).
 
 Create a build, add inventory, then record a repair, test or note. A part-use entry consumes stock and snapshots its name and integer-cent unit value. Later name/value edits and archived notes do not rewrite that history. Returns and restocks are explicit stock adjustments with a date and reason.
 
@@ -39,4 +39,4 @@ Checks cover stock consumption, preserved snapshots, rejected overspending, conc
 
 `web/model.js` contains ledger rules and validation. `web/store.js` owns transactional storage and the memory fallback. `web/app.js` renders and operates the workspace. GitHub Actions checks the code and publishes only `web` to free GitHub Pages.
 
-Built by [hirsu](https://hrushikbarani-hub.github.io/) from the Robo Telescope repair and custom-electronics projects. The app starts empty so that fictional records are never mistaken for actual build history.
+Built by [hirsu](https://hirsu-dev.github.io/) from the Robo Telescope repair and custom-electronics projects. The app starts empty so that fictional records are never mistaken for actual build history.
